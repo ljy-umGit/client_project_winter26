@@ -1,3 +1,4 @@
+---  <!-- Jekyll front matter -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,21 +10,7 @@
     <title>MSI Career Development Resource Hub</title>
 </head>
 <body>
-    <header>
-      <div class = "header-frame">
-        <a href = "#main-content" class = "skip-to-main subtitle">Skip to Main Content</a>
-        <img src="images/logo-header.png" class = "umsi-logo" alt="UMSI Logo">
-      </div>
-        <nav>
-            <ul>
-                <li ><a href = "index.html" class = "nav-btn subtitle">Home</a></li>
-                <li><a href = "resume.html" class = "nav-btn subtitle">Resumes</a></li>
-                <li><a href = "network&connections.html" class = "nav-btn subtitle">Networking</a></li>
-                <li><a href = "portfolio-showcase.html" class = "nav-btn subtitle">Portfolios</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    {% include header.html %}
     <main id="main-content">
     <section class = "banner-section">
       <div>
@@ -106,9 +93,6 @@
         <!-- Content taken & modified from UMGPT with the prompt, "Write me a webpage of intro content to help meet the following requirements - this is for the home page": and then pasted in the client objectives & project requirements"
         UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
     </main>
-    <footer>
-      <img src="images/umsi-logo-vert-u.png" alt="UMSI Logo Suqared">
-      <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
-    </footer>
+    {% include footer.html %}
 </body>
 </html>

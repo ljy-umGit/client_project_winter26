@@ -56,7 +56,7 @@ p {
 body {
     display: flex;
     flex-direction: column;
-    max-width: 402px; /* 16/17pro screen width, change to media query in final ver. */
+    min-width: 402px; /* 16/17pro screen width, change to media query in final ver. */
 }
 
 /* Global Header & Footer styles */

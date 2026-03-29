@@ -1,3 +1,4 @@
+--- <!-- Jekyll front matter -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,21 +10,7 @@
         <title>Portfolio Building Guide</title>
     </head>
     <body>
-        <header>
-        <div class = "header-frame">
-            <a href = "#main-content" class = "skip-to-main subtitle">Skip to Main Content</a>
-            <img src="images/logo-header.png" class = "umsi-logo" alt="UMSI Logo">
-        </div>
-            <nav>
-                <ul>
-                    <li ><a href = "index.html" class = "nav-btn subtitle">Home</a></li>
-                    <li><a href = "resume.html" class = "nav-btn subtitle">Resumes</a></li>
-                    <li><a href = "network&connections.html" class = "nav-btn subtitle">Networking</a></li>
-                    <li><a href = "portfolio-showcase.html" class = "nav-btn subtitle">Portfolios</a></li>
-                </ul>
-            </nav>
-        </header>
-
+        {% include header.html %}
         <main id="main-content">
         <section class="portfolio-banner-section">
             <div class="column-gap-default">
@@ -164,9 +151,6 @@
         </section>
 
         </main>
-            <footer>
-                <img src="images/umsi-logo-vert-u.png" alt="UMSI Logo Suqared">
-                <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
-            </footer>
+            {% include footer.html %}
     </body>
 </html>
