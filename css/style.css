@@ -14,7 +14,6 @@
     /* Primary Palette */
     --blue:#00274C;
     --maize:#FFCB05;
-    --bg-color:#ffffff;
 
     /* Secondary Palette */
     --puma-black:#131516;
@@ -44,13 +43,15 @@
     --text-color-default: var(--puma-black);
     --text-color-inverse: var(--bg-color);
 
-    /* Bottom Layer color */
-    --bottom-layer-color: #f2f2f2;
+    /* Background colors */
+    --bg-color:#ffffff;
+    --bg-color-2: #f2f2f2;
+    --bg-color-3: #eeeeee;
 }
 
 /* Global element styles */
 html {
-    background-color: var(--bottom-layer-color);
+    background-color: var(--bg-color-3);
 }
 body {
     font-size: 16px;
@@ -247,7 +248,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--bg-color);
+    background-color: var(--bg-color-2);
+    border: 0.5px solid var(--blue);
     padding: 2.25rem 2rem;
     gap: 2.25rem;
 }
@@ -740,6 +742,21 @@ footer a{
     list-style-type: none;
 }
 
+/* 404 Page Styles */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 6rem 1.5rem;
+}
+
+.error-container > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 /* .grid-span2{
     grid-column: 1 / span 2;
 } */
@@ -880,8 +897,13 @@ footer a{
 @media only screen and (min-width: 1024px){
     .page-container{
         max-width: 1200px;
-        padding: 0 2rem;
+        padding: 0 2.5rem;
     }
 
+    .footer-container-top{
+        display: flex;
+        flex-direction: row;
+        gap: 2.25rem;
+    }
 
 }
