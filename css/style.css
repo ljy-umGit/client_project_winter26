@@ -27,13 +27,22 @@
     /* Banner Img Overlay Color */
     --blue-rgb: 0, 39, 76;
 
-    /* Typography */
+    /* Text Tokens */
     --text-body: 1rem;
     --text-subtitle: 1.25rem;
     --text-h1: 3rem;
     --text-h2: 2.25rem;
     --text-h3: 2rem;
     --text-h4: 1.75rem;
+
+    /* Text Weights */
+    --font-weight-regular: 400;
+    --font-weight-semibold: 500;
+    --font-weight-bold: 700;
+
+    /* Text Colors */
+    --text-color-default: var(--puma-black);
+    --text-color-inverse: var(--bg-color);
 }
 
 /* Global element styles */
@@ -43,9 +52,9 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Playfair-Display', Georgia, serif;
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
     line-height: 1.2;
-    color: black;
+    color: var(--text-color-default);
 }
 
 h1 {
@@ -66,18 +75,18 @@ h4 {
 
 p {
     font-family: 'Atkinson-Hyperlegible', Arial, Helvetica, sans-serif;
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
     font-size: var(--text-body);
     line-height: 1.5;
-    color: black;
+    color: var(--text-color-default);
 }
 
 .subtitle{
     font-family: 'Atkinson-Hyperlegible', Arial, Helvetica, sans-serif;
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
     font-size: var(--text-subtitle);
     line-height: 1.5;
-    color: var(--puma-black);
+    color: var(--text-color-default);
     text-decoration: none;
 }
 
@@ -98,8 +107,9 @@ body {
 
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 0.5rem;
-    min-height: 3rem;
+    min-height: 1.5rem;
     padding: 1rem 2rem;
     border: 1px solid var(--cta-border);
     border-radius: 0.5rem;
@@ -113,12 +123,10 @@ body {
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-.cta-button:hover,
-.cta-button:focus-visible {
-    background-color: var(--arboretum-blue);
-    color: var(--bg-color);
-    outline: 2px solid var(--blue);
-    outline-offset: 2px;
+.cta-button:hover, .cta-button:focus {
+    background-color: var(--bg-color);
+    color: var(--taubman-teal);
+    font-weight: var(--font-weight-semibold);
 }
 
 .cta-button--primary {
@@ -154,7 +162,7 @@ header {
     z-index: 999;
     background-color: var(--bg-color);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
     border: 1px solid var(--blue);
     border-radius: 6px;
 }
@@ -165,7 +173,7 @@ nav li{
 }
 
 nav li :hover, nav li :active, nav li :focus{
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
 }
 
 .nav-btn {
