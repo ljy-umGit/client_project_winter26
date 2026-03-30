@@ -2,156 +2,158 @@
 ---
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
-        <link rel="stylesheet" href="css/html5reset.css">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Portfolio Building Guide</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio Building Guide</title>
+</head>
+<body>
+    <div class="page-container">
         {% include header.html %}
+
         <main id="main-content">
-        <section class="portfolio-banner-section">
-            <div class="column-gap-default">
-                <h1 class="txtcolor-wht">Featured Portfolios</h1>
-                <h2 class="txtcolor-wht">Fall 2026</h2>
-            </div>
-            <div>
-                <p>A primary way UMSI students showcase their work is through a portfolio. Every semester, UMSI students votes on the best portfolios created that term by their tracks, and we feature those portfolios here to give our students' works exposure and as inspirations.</p>
-            </div>
+            <section class="portfolio-banner-section">
+                <div class="column-gap-default">
+                    <h1 class="txtcolor-wht">Featured Portfolios</h1>
+                    <h2 class="txtcolor-wht">Fall 2026</h2>
+                </div>
+                <div>
+                    <p>A primary way UMSI students showcase their work is through a portfolio. Every semester, UMSI students votes on the best portfolios created that term by their tracks, and we feature those portfolios here to give our students' works exposure and as inspirations.</p>
+                </div>
 
-            <div class="track-selection">
-                <h2 class="txtcolor-blk">Select Tracks</h2>
-                <ul>
-                    <li class="secondary-button "><a href="#track-1" class="subtitle">UX Research and Design</a><span class="material-symbols-outlined">arrow_forward</span></li>
-                    <li class="secondary-button"><a href="#track-2" class="subtitle">User-Centered Agile Development</a><span class="material-symbols-outlined">arrow_forward</span></li>
-                    <li class="secondary-button"><a href="#track-3" class="subtitle">Big Data Analytics</a><span class="material-symbols-outlined">arrow_forward</span></li>
-                    <li class="secondary-button"><a href="#track-4" class="subtitle">Libraries, Archives, and Knowledge Environments in Society</a><span class="material-symbols-outlined">arrow_forward</span></li>
-                </ul>
-            </div>
-        </section>
+                <div class="track-selection">
+                    <h2 class="txtcolor-blk">Select Tracks</h2>
+                    <ul>
+                        <li class="secondary-button"><a href="#track-1" class="subtitle">UX Research and Design</a><span class="material-symbols-outlined">arrow_forward</span></li>
+                        <li class="secondary-button"><a href="#track-2" class="subtitle">User-Centered Agile Development</a><span class="material-symbols-outlined">arrow_forward</span></li>
+                        <li class="secondary-button"><a href="#track-3" class="subtitle">Big Data Analytics</a><span class="material-symbols-outlined">arrow_forward</span></li>
+                        <li class="secondary-button"><a href="#track-4" class="subtitle">Libraries, Archives, and Knowledge Environments in Society</a><span class="material-symbols-outlined">arrow_forward</span></li>
+                    </ul>
+                </div>
+            </section>
 
-        <section id="track-1" class= "portfolio-section1">
-            <div><h2>UX Research and Design</h2></div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="./images/Portfolio1.png" alt="Portfolio placeholder 1">
-                    <p>Sofia Rossi | <a href="mailto:someone@example.com">someone@example.com</a></p>
+            <section id="track-1" class="portfolio-section1">
+                <div><h2>UX Research and Design</h2></div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="./images/Portfolio1.png" alt="Portfolio placeholder 1">
+                        <p>Sofia Rossi | <a href="mailto:someone@example.com">someone@example.com</a></p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="./images/Portfolio2.png" alt="Portfolio placeholder 2">
+                        <p>Kofi Mensah | <a href="mailto:someone@example.com">someone@example.com</a></p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="./images/Portfolio3.png" alt="Portfolio placeholder 3">
+                        <p>Meiwan Chen | <a href="mailto:someone@example.com">someone@example.com</a></p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="./images/Portfolio4.png" alt="Portfolio placeholder 4">
+                        <p>Min-Jun Kim | <a href="mailto:someone@example.com">someone@example.com</a></p>
+                    </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="./images/Portfolio2.png" alt="Portfolio placeholder 2">
-                    <p>Kofi Mensah | <a href="mailto:someone@example.com">someone@example.com</a></p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="./images/Portfolio3.png" alt="Portfolio placeholder 3">
-                    <p>Meiwan Chen | <a href="mailto:someone@example.com">someone@example.com</a></p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="./images/Portfolio4.png" alt="Portfolio placeholder 4">
-                    <p>Min-Jun Kim | <a href="mailto:someone@example.com">someone@example.com</a></p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="track-2" class= "portfolio-section2">
-            <div><h2>User-Centered Agile Development</h2></div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="./images/Portfolio1.png" alt="Portfolio placeholder 1">
-                    <p>Yuki Tanaka | <a href="mailto:someone@example.com">someone@example.com</a></p>
+            <section id="track-2" class="portfolio-section2">
+                <div><h2>User-Centered Agile Development</h2></div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="./images/Portfolio1.png" alt="Portfolio placeholder 1">
+                        <p>Yuki Tanaka | <a href="mailto:someone@example.com">someone@example.com</a></p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="./images/Portfolio2.png" alt="Portfolio placeholder 2">
+                        <p>Aarav Varma | <a href="mailto:someone@example.com">someone@example.com</a></p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="./images/Portfolio3.png" alt="Portfolio placeholder 3">
+                        <p>Jordan Taylor | <a href="mailto:someone@example.com">someone@example.com</a></p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="./images/Portfolio4.png" alt="Portfolio placeholder 4">
+                        <p>Isabella Santos | <a href="mailto:someone@example.com">someone@example.com</a></p>
+                    </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="./images/Portfolio2.png" alt="Portfolio placeholder 2">
-                    <p>Aarav Varma | <a href="mailto:someone@example.com">someone@example.com</a></p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="./images/Portfolio3.png" alt="Portfolio placeholder 3">
-                    <p>Jordan Taylor | <a href="mailto:someone@example.com">someone@example.com</a></p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="./images/Portfolio4.png" alt="Portfolio placeholder 4">
-                    <p>Isabella Santos | <a href="mailto:someone@example.com">someone@example.com</a></p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="track-3" class= "portfolio-section3">
-            <h2>Big Data Analytics</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="./images/Portfolio1.png" alt="Portfolio placeholder 1">
-                    <p>Mateo Hernandez | <a href="mailto:someone@example.com">someone@example.com</a></p>
+            <section id="track-3" class="portfolio-section3">
+                <h2>Big Data Analytics</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="./images/Portfolio1.png" alt="Portfolio placeholder 1">
+                        <p>Mateo Hernandez | <a href="mailto:someone@example.com">someone@example.com</a></p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="./images/Portfolio2.png" alt="Portfolio placeholder 2">
+                        <p>Zoya Petrov | <a href="mailto:someone@example.com">someone@example.com</a></p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="./images/Portfolio3.png" alt="Portfolio placeholder 3">
+                        <p>Ji-Hoon Park | <a href="mailto:someone@example.com">someone@example.com</a></p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="./images/Portfolio4.png" alt="Portfolio placeholder 4">
+                        <p>Elena Dumitru | <a href="mailto:someone@example.com">someone@example.com</a></p>
+                    </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="./images/Portfolio2.png" alt="Portfolio placeholder 2">
-                    <p>Zoya Petrov | <a href="mailto:someone@example.com">someone@example.com</a></p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="./images/Portfolio3.png" alt="Portfolio placeholder 3">
-                    <p>Ji-Hoon Park | <a href="mailto:someone@example.com">someone@example.com</a></p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="./images/Portfolio4.png" alt="Portfolio placeholder 4">
-                    <p>Elena Dumitru | <a href="mailto:someone@example.com">someone@example.com</a></p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="track-4" class= "portfolio-section4">
-            <h2>Libraries, Archives, and Knowledge Environments in Society (LAKES)</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="./images/Portfolio1.png" alt="Portfolio placeholder 1">
-                    <p>Thanh Nguyen | <a href="mailto:someone@example.com">someone@example.com</a></p>
+            <section id="track-4" class="portfolio-section4">
+                <h2>Libraries, Archives, and Knowledge Environments in Society (LAKES)</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="./images/Portfolio1.png" alt="Portfolio placeholder 1">
+                        <p>Thanh Nguyen | <a href="mailto:someone@example.com">someone@example.com</a></p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="./images/Portfolio2.png" alt="Portfolio placeholder 2">
+                        <p>Ananya Iyer | <a href="mailto:someone@example.com">someone@example.com</a></p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="./images/Portfolio3.png" alt="Portfolio placeholder 3">
+                        <p>Diego Silva | <a href="mailto:someone@example.com">someone@example.com</a></p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="./images/Portfolio4.png" alt="Portfolio placeholder 4">
+                        <p>Astrid Lindquist | <a href="mailto:someone@example.com">someone@example.com</a></p>
+                    </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="./images/Portfolio2.png" alt="Portfolio placeholder 2">
-                    <p>Ananya Iyer | <a href="mailto:someone@example.com">someone@example.com</a></p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="./images/Portfolio3.png" alt="Portfolio placeholder 3">
-                    <p>Diego Silva | <a href="mailto:someone@example.com">someone@example.com</a></p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="./images/Portfolio4.png" alt="Portfolio placeholder 4">
-                    <p>Astrid Lindquist | <a href="mailto:someone@example.com">someone@example.com</a></p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- <section>
-            <div class="portfolio-page-resource">
-                <h2>Additional Resources</h2>
-                <p>Here are some guides on how to get started building your own portfolio website:</p>
-            </div>
-            <div>
-                <ul class="portfolio-page-resource-grid">
-                    <li class="portfolio-resource-item"><a href="https://docs.google.com/document/d/1a2b3c4d5e6f7g8h9i0jklmnopqrstuvwx/edit?usp=sharing" target="_blank" class="subtitle spaced-between">Portfolio Building Guide</a> - A comprehensive guide to creating an effective portfolio that showcases your skills and projects.</li>
-                    <li class="portfolio-resource-item"><a href="https://www.umsi.edu/career-development/portfolio-examples" target="_blank" class="subtitle spaced-between">UMSI Portfolio Examples</a> - Explore a variety of portfolios from UMSI students across different tracks for inspiration.</li>
-                    <li class="portfolio-resource-item grid-span2"><a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank" class="subtitle spaced-between">Meet with a CDO Career Coach</a> - Get personalized feedback on your portfolio from a career development expert.</li>
-                </ul>
-            </div>
-        </section> -->
+            <!-- <section>
+                <div class="portfolio-page-resource">
+                    <h2>Additional Resources</h2>
+                    <p>Here are some guides on how to get started building your own portfolio website:</p>
+                </div>
+                <div>
+                    <ul class="portfolio-page-resource-grid">
+                        <li class="portfolio-resource-item"><a href="https://docs.google.com/document/d/1a2b3c4d5e6f7g8h9i0jklmnopqrstuvwx/edit?usp=sharing" target="_blank" class="subtitle spaced-between">Portfolio Building Guide</a> - A comprehensive guide to creating an effective portfolio that showcases your skills and projects.</li>
+                        <li class="portfolio-resource-item"><a href="https://www.umsi.edu/career-development/portfolio-examples" target="_blank" class="subtitle spaced-between">UMSI Portfolio Examples</a> - Explore a variety of portfolios from UMSI students across different tracks for inspiration.</li>
+                        <li class="portfolio-resource-item grid-span2"><a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank" class="subtitle spaced-between">Meet with a CDO Career Coach</a> - Get personalized feedback on your portfolio from a career development expert.</li>
+                    </ul>
+                </div>
+            </section> -->
 
-        <section>
-            <div class="portfolio-page-resource"><h2>Additional Resources</h2>
-                <p>Here are some guides on how to get started building your own portfolio website:</p>
-            </div>
-            <div>
-                <ul class="portfolio-page-resource-grid">
-                    <li class = "secondary-button"><a href="https://docs.google.com/document/d/1a2b3c4d5e6f7g8h9i0jklmnopqrstuvwx/edit?usp=sharing" class="subtitle spaced-between">Portfolio Building Guide</a>
-                    <span class="material-symbols-outlined">arrow_forward</span></li>
-                    <li class = "secondary-button"><a href="https://www.umsi.edu/career-development/portfolio-examples" class="subtitle spaced-between">UMSI Portfolio Examples</a>
-                    <span class="material-symbols-outlined">arrow_forward</span></li>
-                    <li class = "secondary-button secondary-button--span2"><a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" class="subtitle spaced-between">Meet with a CDO Career Coach</a>
-                    <span class="material-symbols-outlined">arrow_forward</span></li>
-                </ul>
-            </div>
-        </section>
-
+            <section>
+                <div class="portfolio-page-resource"><h2>Additional Resources</h2>
+                    <p>Here are some guides on how to get started building your own portfolio website:</p>
+                </div>
+                <div>
+                    <ul class="portfolio-page-resource-grid">
+                        <li class="secondary-button"><a href="https://docs.google.com/document/d/1a2b3c4d5e6f7g8h9i0jklmnopqrstuvwx/edit?usp=sharing" class="subtitle spaced-between">Portfolio Building Guide</a>
+                        <span class="material-symbols-outlined">arrow_forward</span></li>
+                        <li class="secondary-button"><a href="https://www.umsi.edu/career-development/portfolio-examples" class="subtitle spaced-between">UMSI Portfolio Examples</a>
+                        <span class="material-symbols-outlined">arrow_forward</span></li>
+                        <li class="secondary-button secondary-button--span2"><a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" class="subtitle spaced-between">Meet with a CDO Career Coach</a>
+                        <span class="material-symbols-outlined">arrow_forward</span></li>
+                    </ul>
+                </div>
+            </section>
         </main>
-            {% include footer.html %}
-    </body>
+        {% include footer.html %}
+    </div>
+</body>
 </html>

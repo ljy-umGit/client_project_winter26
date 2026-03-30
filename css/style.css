@@ -43,8 +43,6 @@
     /* Text Colors */
     --text-color-default: var(--puma-black);
     --text-color-inverse: var(--bg-color);
-
-    
 }
 
 /* Global element styles */
@@ -100,6 +98,7 @@ p {
 body {
     display: flex;
     flex-direction: column;
+
     min-width: 402px; /* For 16/17pro */
 }
 
@@ -211,7 +210,7 @@ header {
 }
 
 .umsi-logo {
-    max-width: 550px;
+    max-width: 100%;
 }
 
 nav ul{
@@ -263,6 +262,18 @@ footer a{
 /* Utility Classes */
 .background-color-none {
     background-color: none;
+}
+
+.border-none{
+    border: none;
+}
+
+.padding-none{
+    padding: none;
+}
+
+.grid-span2{
+    grid-column: 1 / span 2;
 }
 
 /* Main Content & Sections styles */
@@ -580,10 +591,6 @@ footer a{
     list-style-type: none;
 }
 
-
-/* .grid-span2{
-    grid-column: 1 / span 2;
-} */
 /* Portfolio Page styles, page-specific stuff */
 /* Section 1 */
 .portfolio-banner-section > :nth-child(1){
@@ -686,6 +693,7 @@ footer a{
 .portfolio-item img{
     border-radius: 0.5rem;
     border: var(--blue) 0.5px solid;
+    max-width: 100%;
 }
 
 .portfolio-item p{
@@ -732,6 +740,18 @@ footer a{
 
 /* Media queries */
 @media only screen and (min-width: 768px){
+    /* Logo max width override */
+    .umsi-logo {
+        max-width: 100%;
+    }
+
+    /* Whole page container size */
+    .page-container{
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
     /* Header & Nav */
     .secondary-button{
         padding: 2.5rem;
@@ -757,7 +777,7 @@ footer a{
         padding: 2.5rem;
     }
 
-    .banner-section > :nth-child(1){
+    .banner-section > :nth-child(1), .banner-section.banner-section.bg-resume > :nth-child(1), .banner-section.banner-section.bg-ntwrk > :nth-child(1){
         padding: 6rem 3rem 6rem 2rem;
     }
 
@@ -833,6 +853,10 @@ footer a{
     }
 
     /* Portfolio */
+    .portfolio-banner-section > :nth-child(1){
+        padding: 6rem 3rem 6rem 2rem;
+    }
+
     .portfolio-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -847,7 +871,10 @@ footer a{
 }
 
 @media only screen and (min-width: 1024px){
-    body {
-        max-width: 1280px;
+    .page-container{
+        max-width: 1200px;
+        padding: 0 2rem;
     }
+
+
 }
