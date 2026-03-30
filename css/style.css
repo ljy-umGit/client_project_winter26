@@ -43,6 +43,8 @@
     /* Text Colors */
     --text-color-default: var(--puma-black);
     --text-color-inverse: var(--bg-color);
+
+    
 }
 
 /* Global element styles */
@@ -117,6 +119,7 @@ body {
     padding: 1rem 2rem;
     border: 1px solid var(--primary-border);
     border-radius: 0.5rem;
+    max-width: 500px;
     background-color: var(--primary-bg);
     color: var(--primary-text);
     font-family: 'Atkinson-Hyperlegible', Arial, Helvetica, sans-serif;
@@ -203,11 +206,12 @@ header {
 .header-frame{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     padding: 1.5rem;
 }
 
 .umsi-logo {
-    max-width: 100%;
+    max-width: 550px;
 }
 
 nav ul{
@@ -247,9 +251,18 @@ footer img {
     max-height: 6.25rem;
 }
 
+footer p{
+    color: var(--puma-black);
+}
+
 footer a{
     color: var(--arboretum-blue);
     text-decoration: none;
+}
+
+/* Utility Classes */
+.background-color-none {
+    background-color: none;
 }
 
 /* Main Content & Sections styles */
@@ -540,6 +553,11 @@ footer a{
     padding: 1.5rem;
     border: var(--blue) 0.5px solid;
 }
+
+.ntwrk-item > ul {
+    margin-left: 1.25rem;
+}
+
 /* Section 9 */
 .ntwrk-page-resource{
     background-color: var(--rackham-roof-green);
@@ -562,9 +580,10 @@ footer a{
     list-style-type: none;
 }
 
-.grid-span2{
+
+/* .grid-span2{
     grid-column: 1 / span 2;
-}
+} */
 /* Portfolio Page styles, page-specific stuff */
 /* Section 1 */
 .portfolio-banner-section > :nth-child(1){
@@ -651,7 +670,7 @@ footer a{
     background-color: #CFC096;
 }
 
-.porfolio-grid{
+.portfolio-grid{
     display: grid;
     flex-direction: column;
 }
@@ -713,18 +732,10 @@ footer a{
 
 /* Media queries */
 @media only screen and (min-width: 768px){
-    .header-frame{
+    /* Header & Nav */
+    .secondary-button{
         padding: 2.5rem;
     }
-
-    .banner-section > :nth-child(1){
-        padding: 4rem 3rem;
-    }
-
-    .banner-section > :nth-child(2),.banner-section > :nth-child(3){
-        padding: 2rem 1.5rem;
-    }
-
     nav ul{
         display: flex;
         flex-direction: row;
@@ -735,9 +746,108 @@ footer a{
         flex: 1;
     }
 
-    .porfolio-grid{
+    .nav-btn {
+        border-left: var(--blue) 0.5px solid;
+        border-right: var(--blue) 0.5px solid;
+        border-bottom: none;
+    }
+
+    /* Main content - Universal */
+    .header-frame{
+        padding: 2.5rem;
+    }
+
+    .banner-section > :nth-child(1){
+        padding: 6rem 3rem 6rem 2rem;
+    }
+
+    .banner-section > :nth-child(2),.banner-section > :nth-child(3){
+        padding: 3rem 2rem;
+    }
+
+    .section_heading-first div {
+    align-items: center;
+    }
+
+    .section_heading-first > :nth-child(1){
+        padding: 6rem 2rem 3rem 2rem;
+    }
+
+    .section_heading-first > :nth-child(2) > ul li{
+        padding: 2.5rem;
+    }
+
+    .section_img-first > :nth-child(2) {
+        padding: 3rem 2rem 3rem 2rem;
+    }
+
+    .section_flex-column > :nth-child(1){
+        padding: 6rem 2em 3rem 2rem;
+        row-gap: 1.5rem;
+    }
+
+    .section_flex-column > :nth-child(2) ul {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .section_flex-column > :nth-child(2) li {
+        padding: 2.5rem;
+        grid-column: span 1;
+    }
+
+    .section_contained{
+        padding: 4rem 2em 4rem 2em;
+        row-gap: 2.5rem;
+    }
+
+    .section_contained > :nth-child(2){
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    /* Page-specific */
+    /* Networking */
+    .section_flex-column.bg-teal > :nth-child(1){
+        padding: 1.5rem 2rem 1.5rem 2rem;
+    }
+
+    .section_heading-first.flex-column.bg-wavefield-green > :nth-child(1){
+        padding: 6rem 2rem 2.5rem 2rem;
+    }
+
+    .ntwrk-item{
+        padding: 2rem;
+    }
+
+    .ntwrk-page-resource{
+        padding: 6rem 2rem 2.5rem 2rem;
+    }
+
+    .ntwrk-resource-item{
+        padding: 2rem;
+    }
+    /* Resume */
+    .banner-section > :nth-child(4) {
+    align-items: center;
+    }
+
+    /* Portfolio */
+    .portfolio-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
+    .portfolio-item{
+        padding: 2rem;
+    }
+    .portfolio-resource-item {
+        grid-column: span 1;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    body {
+        max-width: 1280px;
+    }
 }
