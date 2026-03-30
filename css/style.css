@@ -90,6 +90,10 @@ p {
     text-decoration: none;
 }
 
+.text-on-dark{
+    color: var(--bg-color);
+}
+
 /* Setting base screen width */
 body {
     display: flex;
@@ -99,11 +103,11 @@ body {
 
 /* Components */
 
-/* CTA Button */
-.cta-button {
-    --cta-bg: var(--taubman-teal);
-    --cta-text: var(--puma-black);
-    --cta-border: var(--blue);
+/* Primary Button */
+.primary-button {
+    --primary-bg: var(--taubman-teal);
+    --primary-text: var(--puma-black);
+    --primary-border: var(--blue);
 
     display: flex;
     justify-content: center;
@@ -111,10 +115,10 @@ body {
     gap: 0.5rem;
     min-height: 1.5rem;
     padding: 1rem 2rem;
-    border: 1px solid var(--cta-border);
+    border: 1px solid var(--primary-border);
     border-radius: 0.5rem;
-    background-color: var(--cta-bg);
-    color: var(--cta-text);
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
     font-family: 'Atkinson-Hyperlegible', Arial, Helvetica, sans-serif;
     font-size: var(--text-subtitle);
     line-height: 1.2;
@@ -123,15 +127,54 @@ body {
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-.cta-button:hover, .cta-button:focus {
+.primary-button:hover, .primary-button:focus {
     background-color: var(--bg-color);
     color: var(--taubman-teal);
     font-weight: var(--font-weight-semibold);
 }
 
-.cta-button--primary {
-    --cta-bg: var(--taubman-teal);
-    --cta-text: var(--puma-black);
+/* Secondary button */
+.secondary-button {
+    --secondary-bg: var(--bg-color);
+    --secondary-text: var(--text-color-default);
+    --secondary-border: var(--blue);
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 0.75rem;
+    padding: 1.5rem;
+    border: var(--secondary-border) 0.5px solid;
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+    font-family: 'Atkinson-Hyperlegible', Arial, Helvetica, sans-serif;
+    font-size: var(--text-subtitle);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.5;
+    text-decoration: none;
+    transition: var(--taubman-teal) 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+    background-color: var(--taubman-teal);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Skip to main button */
+.skip-to-main {
+    position: absolute;
+    z-index: -999;
+}
+
+.skip-to-main:focus {
+    display: block;
+    z-index: 999;
+    background-color: var(--bg-color);
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+    border: 1px solid var(--blue);
+    border-radius: 6px;
 }
 
 /* Global Header & Footer styles */
@@ -150,21 +193,6 @@ header {
 
 .umsi-logo {
     max-width: 100%;
-}
-
-.skip-to-main {
-    position: absolute;
-    z-index: -999;
-}
-
-.skip-to-main:focus {
-    display: block;
-    z-index: 999;
-    background-color: var(--bg-color);
-    text-decoration: none;
-    font-weight: var(--font-weight-bold);
-    border: 1px solid var(--blue);
-    border-radius: 6px;
 }
 
 nav li{
@@ -331,14 +359,14 @@ footer a{
     max-width: 100%;
 }
 
-.section_img-first > :nth-child(3) > ul li{
+/* .section_img-first > :nth-child(3) > ul li{
     display: flex;
     align-items: center;
     flex-direction: row;
     column-gap: 0.75rem;
     padding: 1.5rem;
     border: var(--blue) 0.5px solid;
-}
+} */
 
 /* Section 4 */
 .section_flex-column{
