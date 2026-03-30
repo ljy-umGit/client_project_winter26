@@ -652,7 +652,7 @@ footer a{
 }
 
 .porfolio-grid{
-    display: flex;
+    display: grid;
     flex-direction: column;
 }
 
@@ -735,5 +735,9 @@ footer a{
         flex: 1;
     }
 
+    .porfolio-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
 }
