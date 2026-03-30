@@ -43,9 +43,15 @@
     /* Text Colors */
     --text-color-default: var(--puma-black);
     --text-color-inverse: var(--bg-color);
+
+    /* Bottom Layer color */
+    --bottom-layer-color: #f2f2f2;
 }
 
 /* Global element styles */
+html {
+    background-color: var(--bottom-layer-color);
+}
 body {
     font-size: 16px;
 }
@@ -241,7 +247,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: var(--bg-color);
     padding: 2.25rem 2rem;
     gap: 2.25rem;
 }
@@ -742,7 +748,7 @@ footer a{
 @media only screen and (min-width: 768px){
     /* Logo max width override */
     .umsi-logo {
-        max-width: 100%;
+        max-width: 500px;
     }
 
     /* Whole page container size */
@@ -750,6 +756,7 @@ footer a{
         max-width: 900px;
         margin: 0 auto;
         padding: 0 1.5rem;
+        background-color: var(--bg-color);
     }
 
     /* Header & Nav */
