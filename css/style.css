@@ -255,7 +255,10 @@ footer {
 }
 
 footer img {
+    max-width: 100%;
     max-height: 6.25rem;
+    aspect-ratio: 1/1;
+
 }
 
 footer p{
@@ -899,12 +902,16 @@ footer a{
 
     .footer-container-top{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: auto 1fr 1fr;
         gap: 2.25rem;
     }
-    .footer-container-top div {
+    .footer-container-top > div {
         display: flex;
         flex-direction: column;
         gap: 1rem;
+    }
+
+    .footer img {
+        max-width: 10rem;
     }
 }
