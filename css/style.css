@@ -157,8 +157,23 @@ body {
 
 .secondary-button:hover,
 .secondary-button:focus {
-    background-color: var(--taubman-teal);
+    background-color: var(--bg-color);
+    color: var(--taubman-teal);
     font-weight: var(--font-weight-semibold);
+}
+
+.secondary-button--stacked {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.75rem;
+}
+
+.secondary-button--stacked p {
+    margin: 0;
+}
+
+.secondary-button--span2 {
+    grid-column: 1 / span 2;
 }
 
 /* Skip to main button */
@@ -193,6 +208,13 @@ header {
 
 .umsi-logo {
     max-width: 100%;
+}
+
+nav ul{
+    width:100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 nav li{
@@ -399,7 +421,7 @@ footer a{
     display: flex;
     align-items: center;
     flex-direction: row;
-    column-gap: 0.75rem;
+    column-gap: 1.5rem;
     max-width: 100%;
     padding: 2rem 1.5rem;
     border: var(--blue) 0.5px solid;
@@ -469,9 +491,9 @@ footer a{
     background-color: var(--rackham-roof-green);
 }
 
-.padding-default{
+/* .padding-default{
     padding: 1.5rem;
-}
+} */
 /* resume.html styles end */
 
 /* Networking&Connection Page styles, page-specific stuff */
@@ -656,7 +678,11 @@ footer a{
 }
 
 .portfolio-item p a{
-    text-decoration: none;
+    color: var(--puma-black)
+}
+
+.portfolio-item p a:hover{
+    text-decoration: underline;
 }
 
 /* Section 7 */
@@ -681,12 +707,12 @@ footer a{
     list-style-type: none;
 }
 
-.grid-span2{
+/* .grid-span2{
     grid-column: 1 / span 2;
-}
+} */
 
 /* Media queries */
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 768px){
     .header-frame{
         padding: 2.5rem;
     }
@@ -698,4 +724,16 @@ footer a{
     .banner-section > :nth-child(2),.banner-section > :nth-child(3){
         padding: 2rem 1.5rem;
     }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+    }
+
+    nav li {
+        flex: 1;
+    }
+
+
 }
